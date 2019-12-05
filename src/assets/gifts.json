@@ -1,0 +1,62 @@
+[ 
+   { 
+      "img":"../assets/images/gift1.jpg",
+      "cardTitle":"Geode State Ornamnets",
+      "price":"15$",
+      "rating":5
+   },
+   { 
+      "img":"../assets/images/gift2.jpg",
+      "cardTitle":"Terrarium Candle",
+      "price":"25$",
+      "rating":4
+   },
+   { 
+      "img":"../assets/images/gift3.jpg",
+      "cardTitle":"Etched Marathon Pint Glass",
+      "price":"18$",
+      "rating":5
+   },
+   { 
+      "img":"../assets/images/gift4.jpg",
+      "cardTitle":"Birthstone Ornaments",
+      "price":"25$",
+      "rating":5
+   },
+   { 
+      "img":"../assets/images/gift5.jpg",
+      "cardTitle":"Mason Jar Indoor Herb Garden",
+      "price":"25$",
+      "rating":4
+   },
+   { 
+      "img":"../assets/images/gift6.jpg",
+      "cardTitle":"Cozy Global Gift Basket",
+      "price":"60$",
+      "rating":4
+   },
+   { 
+      "img":"../assets/images/gift7.jpg",
+      "cardTitle":"Past Present and Future Earrings",
+      "price":"48$",
+      "rating":4.6
+   },
+   { 
+      "img":"../assets/images/gift8.jpg",
+      "cardTitle":"Ring of Love - Daughter",
+      "price":"45$",
+      "rating":5
+   },
+   { 
+      "img":"../assets/images/gift9.jpg",
+      "cardTitle":" Sentimental Sand Custom Karma Bracelet",
+      "price":"49$",
+      "rating":5
+   },
+   { 
+      "img":"../assets/images/gift10.jpg",
+      "cardTitle":"My Life Story - So Far",
+      "price":"35$",
+      "rating":5
+   }
+]

@@ -1,0 +1,18 @@
+
+<app-carousal></app-carousal>
+<div class="movingContent" >
+<marquee direction = "left">Gift a Present to your loved ones,by purchasing Gift below!!!</marquee>
+</div>
+<div></div>
+<div class="giftCard">
+  <div class="card" style="width: 18rem;cursor: pointer;" *ngFor="let card of cards let i = index" >
+  <img src= {{card.img}} class="card-img-top" alt="..." (click)="getProductDetail(i)" id="giftCard">
+  <div class="card-body" >
+    <h5 class="card-title">{{card.cardTitle}}</h5>
+    <p>{{card.price}}</p>
+    <app-rating [currentRate]="card.rating"></app-rating>
+  </div>
+
+</div>
+   
+	</div>

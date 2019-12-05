@@ -1,0 +1,34 @@
+<div class="movingContent">
+<marquee direction = "right">Happy New Year,Happy Holidays!!!</marquee>
+</div>
+<div class="productCatalog">
+     <div class="productimage">
+     	<img src= {{cardobj.img}} >
+     </div>
+     <div class="productdetail">
+     	<h1>{{cardobj.cardTitle}}</h1>
+     	<div><span>Price:</span><span>{{cardobj.price}}</span></div>
+      <div class="selectControl">
+      	   <div>Quantity:</div>
+     	  <form [formGroup]="form" class="frmselect">
+      <select formControlName="quantity" [(ngModel)]="cartvalue">
+        <option *ngFor="let quantity of productQuantity" [ngValue]="quantity">
+          {{ quantity }}
+        </option>
+      </select>
+    </form>
+</div>
+        <div class="productAction">
+        	<p>Rating:</p>
+     	 <app-rating  class="rating" [currentRate]="cardobj.rating"></app-rating>
+     	</div>
+     	 <div>
+     	  
+<ngbd-modal-component></ngbd-modal-component>
+<div class="productBtn">
+	<button class="expand" id="a2c" type="submit" (click)="addToCart()">add to cart</button>
+	</div>
+</div>
+     </div>
+	 
+	</div>

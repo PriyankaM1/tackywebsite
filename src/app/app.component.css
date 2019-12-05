@@ -1,0 +1,29 @@
+
+.alignCent {
+	margin:0 auto;
+	font-family: italic;
+	font-size:43px;
+	font-weight:bold;
+}
+#matclass{
+	
+	//background-image: linear-gradient(to bottom right, #948a91, black);
+	 background-image: url("../assets/images/mainbar.gif");
+	 background-size: contain;
+}
+#myCart{
+	width:75px;
+	 background-image: url("../assets/images/cart.png");
+	  background-size: contain;
+	  background-repeat: no-repeat;
+	  height:75px;
+}
+.gtmMiniCart{
+	color: maroon;
+       position: relative;
+    left: 31px;
+    top: 15px;
+    color: yellow;
+    font-weight: bold;
+    font-size: 31px;
+}

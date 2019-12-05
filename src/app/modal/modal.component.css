@@ -1,0 +1,20 @@
+
+.expand{
+   width: 100%;
+    border-radius: 16px;
+    color: white;
+    background-color: #03484C!important;
+    font-size: 22px;
+}
+
+.modal-body >div {
+
+}
+.productBtn {
+    width: 70%;
+    line-height: 44px;
+    padding-top: 12px;
+    /* border-radius: 116px; */
+    margin-left: 68px;
+      background-color: #03484C!important;
+}

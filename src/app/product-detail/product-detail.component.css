@@ -1,0 +1,69 @@
+.productCatalog {
+ display: flex;
+  flex-wrap: nowrap;
+  width: 1138px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 42px;
+}
+.productCatalog > div {
+  margin: 10px;
+  text-align: center;
+  line-height: 51px;
+  font-size: 20px;
+  height:70%;
+}
+.productdetail{
+	width:30%;
+}
+.productimage {
+	width: 51%;
+}
+.productimage>img {
+ width: 536px;
+    height: 327px;
+}
+.productAction{
+	display:flex;
+	flex-wrap:nowrap;
+	margin-left: 63px;
+}
+.quantdropdown{
+	width:10%;
+	font-size:23px;
+}
+.productBtn {
+	width: 70%;
+    line-height: 44px;
+    padding-top: 12px;
+    /* border-radius: 116px; */
+    margin-left: 68px;
+}
+.expand{
+   width: 100%;
+    border-radius: 16px;
+    color: white;
+    background-color: #03484C;
+    font-size: 22px;
+}
+.movingContent{
+	  background-image: linear-gradient(to bottom right, #e97c57, white);
+	 color:red;
+	 font-size:34px;
+	 font-weight:bold;
+}
+.rating{
+	margin-left: 12px;
+}
+.selectControl{
+	display:flex;
+	margin-left: 110px
+}
+.selectControl:firstdiv{
+	width:20%;
+}
+.frmselect{
+	    width: 23%;
+}
+--font-family-sans-serif: Noto Sans,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    --font-family-serif: Merriweather,Georgia,Cambria,Times New Roman,Times,serif;
