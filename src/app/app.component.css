@@ -26,4 +26,101 @@
     color: yellow;
     font-weight: bold;
     font-size: 31px;
+    cursor:pointer;
+}
+.cartmsg{
+	 background-image: url("../assets/images/body.png");
+	  background-repeat: repeat-y;
+	  background-size:cover;
+	  width:100%;
+	  height:100%;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 367%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-image: url("../assets/images/body.png")!important;
+	  background-repeat: repeat-y;
+	  background-size:contain;
+ /* margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+    border: 1px solid #888;
+    width: 87%;
+    /* margin-left: 57%; */
+    /* margin-top: 3%; */
+    height: 570px;
+    /* margin-left: 2%; */
+   left: 92px;
+    top: 73px;
+   
+
+   /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content >p{
+ tex-align:center;
+}
+.ordersummary {
+	width: 50%;
+    height: 70%;
+    background-color: #e8e4df;
+    position: relative;
+    left: 496px;
+    border-radius:2px;
+    text-align:center;
+    top:45px;
+}
+hr{
+	background-color:gold;
+}
+ .flexdiv{
+ 	display: flex;
+    justify-content: center;
+
+ }
+.width50{
+	width:50%;
+}
+.width20{
+	width:30%;
+}
+
+.bold{
+	font-size:23px;
+	font-weight:bold;
+}
+
+.expand{
+   width: 50%;
+    border-radius: 16px;
+    color: white;
+    background-color: #03484C!important;
+    font-size: 22px;
+    margin-top: 44px;
 }

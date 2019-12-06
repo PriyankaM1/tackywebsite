@@ -25,7 +25,7 @@
 <mat-toolbar color="primary" id="matclass">
 <span class="alignCent"> Merry Christmas  and Happy Holidays!!</span>
 <span class="example-fill-remaining-space"></span>  
-<div id="myCart"><a  href="" id="checkoutButton"><span class="gtmMiniCart">{{global.cartData}}</span></a></div>
+<div id="myCart" (click)="openCart()"><span class="gtmMiniCart">{{global.cartData}}</span></div>
 </mat-toolbar> 
 
 <nav mat-tab-nav-bar>
@@ -37,6 +37,28 @@ routerLinkActive #rla="routerLinkActive"
 
 </a>
 </nav>
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+     <div class="ordersummary"><h4>OrderSummary</h4>
+       <p> You have {{global.cartData}} items added</p>
+       <hr>
+       <div class="flexdiv"><div class="width20 bold">SubTotal:</div><div class="width20">80$</div></div>
+       <hr>
+        <div class="flexdiv"><div class="width20 bold">EstimatedTotal:</div><div class="width20">80$</div></div>
+        <hr>
+         <button class="expand" id="a2c" type="submit" (click)="checkOut()">Checkout</button>
+     </div>
+
+  </div>
+
+</div>
 <router-outlet></router-outlet>
 
 
