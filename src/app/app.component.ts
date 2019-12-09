@@ -12,6 +12,7 @@ export class AppComponent {
   title = 'tacky-website';
   navLinks: any[];
   activeLinkIndex = -1; 
+  show:boolean=true;
   constructor(private router: Router,private global:ProductDataService) {
     this.navLinks = [
         {
@@ -34,10 +35,13 @@ ngOnInit(): void {
 }
 
 openCart(){
+  this.show=true;
+  this.showdiv=true;
 	document.getElementById("myModal").style.display="block";
 }
 checkOut(){
 	document.getElementById("myModal").style.display="none";
+  this.global.cartData=0;
 	 this.router.navigate(['/first']); 
 }
 }
