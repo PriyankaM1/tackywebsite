@@ -46,16 +46,20 @@ routerLinkActive #rla="routerLinkActive"
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-     <div class="ordersummary"><h4>OrderSummary</h4>
+     <div class="ordersummary" *ngIf="showdiv"><h4>OrderSummary</h4>
        <p> You have {{global.cartData}} items added</p>
        <hr>
        <div class="flexdiv"><div class="width20 bold">SubTotal:</div><div class="width20">80$</div></div>
        <hr>
         <div class="flexdiv"><div class="width20 bold">EstimatedTotal:</div><div class="width20">80$</div></div>
         <hr>
-         <button class="expand" id="a2c" type="submit" (click)="checkOut()">Checkout</button>
+         <button class="expand" id="a2c" type="submit" *ngIf="show" (click)="show=!show">Checkout</button>
+          <button class="expand" id="a2c" type="submit" (click)="showdiv=!showdiv" *ngIf="!show">Place An Order</button>
      </div>
-
+         <div class="ordersummary" *ngIf="!showdiv">
+          <h4> Order Placed Successfully</h4>
+          <button class="expand" id="a2c" type="submit" (click)="checkOut()" *ngIf="!show">Exit</button>
+         </div>
   </div>
 
 </div>
